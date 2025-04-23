@@ -7,6 +7,7 @@
 # Pattern
 - Buffer Overflow : 정해진 버퍼사이즈 넘게 입력받을때 생기는 취약점
 - Stack Canary : 버퍼와 SFP 사이에 임의의 데이터를 삽입하여 버퍼 오버플로우를 탐지하는 기법
+- Free Hook Overwrite : free()를 쉘 따는 트리거로 바꾸는 기법 
 - Format String bug : printf, fprintf, sprintf, snprintf 같은 함수에서 사용자 입력을 포맷 문자열로 직접 사용할 때 발생하는 취약점
 - Return to libc : Library 내에 함수로 Return 하는 공격기법
 - ROP(Return-Oriented Programming) : return-oriented-programming 의 약자로, 마치 프로그래밍 하듯이 리턴주소를 조작해 함수를 실행하는 기법. BOF 를 일으켜 리턴 주소 이후를 덮을 수 있을 때 사용
