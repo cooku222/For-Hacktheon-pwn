@@ -1,6 +1,6 @@
 from pwn import *
 
-p = remote('HOST', 'domain number')
+p = remote('HOST', PORT) #할당된 VM 값 넣어야함
 e = ELF('./rtl')
 
 def slog(name, addr): return success(': '.join([name, hex(addr)]))
